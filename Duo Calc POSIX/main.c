@@ -141,7 +141,7 @@ int main(int argc, const char * argv[]) {
         sleep(1);
     }
     printf("\n********** Program Ended **********\n");
-    printf("Total Circulation:%d\n",count);
+    printf("Total Cycle(s):%d\n",count);
     return 0;
 }
 

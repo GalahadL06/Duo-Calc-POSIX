@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		C264925E2CB6B7BE003DD982 /* Duo Calc POSIX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Duo Calc POSIX"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C274291B2CB6C9CB00AA3677 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		C26492552CB6B7BE003DD982 = {
 			isa = PBXGroup;
 			children = (
+				C274291B2CB6C9CB00AA3677 /* README.md */,
 				C26492602CB6B7BE003DD982 /* Duo Calc POSIX */,
 				C264925F2CB6B7BE003DD982 /* Products */,
 			);

@@ -27,6 +27,13 @@ float min(float a,float b){
     }
     return min;
 }
+double fraction(int a){
+    double result = 1.0;
+    for (int i = 1; i <= a; i++) {
+            result =result* i;
+    }
+    return result;
+}
 int intbasicinput1(int a){
     printf("Input a :");
     scanf("%d",&a);
@@ -53,6 +60,7 @@ int intbasicinput1(int a);
 int intbasicinput2(int b);
 float floatbasicinput1(float a);
 float floatbasicinput2(float b);
+double fraction(int a);
 int main(int argc, const char * argv[]) {
     float a = 1;
     float b = 1;
@@ -101,16 +109,15 @@ int main(int argc, const char * argv[]) {
             printf("a%%b=%f\n",f);
         }
         else if(c=='!'){
-            int x = intbasicinput1(x = 0);
+            int a = intbasicinput1(a = 0);
+            printf("x = %d\n",a);
             double result = 1;
             if (a<0) {
                 printf("Invalid usage of operator '!'");
             }
             else{
-                for (int i = 1; i <= x; i++) {
-                    result =result* i;
-                }
-                printf("a!=%e\n",result);
+                result = fraction(a);
+                printf("a! = %e",result);
             }
         }
         else if (c=='^'){
@@ -125,6 +132,19 @@ int main(int argc, const char * argv[]) {
             }
             else{
                 printf("The square root of a is %f\n",sqrt(a));
+            }
+        }
+        else if (c=='f'){
+            printf("Stop trigger a.\n");
+            int a = intbasicinput1(a = 0);
+            if(a<0){
+                printf("Invalid usage, a should be greater than or equal to 0.");
+            }else{
+                double result = 0.0;
+                for (int i = 1;i <= a;i++){
+                    result += fraction(i);
+                }
+                printf("1!+2!+3!+...+a!=%e",result);
             }
         }
         else if (c=='$'){

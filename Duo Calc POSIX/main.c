@@ -29,8 +29,12 @@ float min(float a,float b){
 }
 double fraction(int a){
     double result = 1.0;
-    for (int i = 1; i <= a; i++) {
+    if(a == 0){
+        result = 1;
+    }else{
+        for (int i = 1; i <= a; i++) {
             result =result* i;
+        }
     }
     return result;
 }

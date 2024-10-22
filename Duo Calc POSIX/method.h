@@ -7,14 +7,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 float max(float a,float b){
-    float max;
-    max = (a>b)?a:b;
-    return max;
+    return (a>b)?a:b;
 }
 float min(float a,float b){
-    float min;
-    min = (a<b)?a:b;
-    return min;
+    return (a<b)?a:b;
 }
 double fraction(int a){
     double result = 1.0;

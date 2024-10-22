@@ -73,13 +73,13 @@ int main(int argc, const char * argv[]) {
             }
             else{
                 result = fraction(a);
-                printf("a! = %e",result);
+                printf("a! = %g",result);
             }
         }
         else if (c=='^'){
             int x = intbasicinput1(a = 0),y = intbasicinput2(b = 0);
             double g = pow(x,y);
-            printf("a^b=%e\n",g);
+            printf("a^b=%g\n",g);
         }
         else if (strcmp(&c,"sqrt")==0){
             float a = floatbasicinput1(a = 0);
@@ -100,7 +100,7 @@ int main(int argc, const char * argv[]) {
                 for (int i = 1;i <= a;i++){
                     result += fraction(i);
                 }
-                printf("1!+2!+3!+...+a!=%e",result);
+                printf("1!+2!+3!+...+a!=%g",result);
             }
         }
         else if (c=='$'){

@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
     sleep(1);
     system("clear");
     while(1){
-        printf("Choose from '+' '-' '*' '/' '%%' '!' '^' 'sqrt' 'f'\nPress '$' to exit\nInput an operator:");
+        printf("Choose from '+' '-' '*' '/' '%%' '!' '^' 'sqrt' 'f'（calculate 1!+2!+3!+...+a!）\nPress '$' to exit\nInput an operator:");
         scanf("%s",&c);
         if(c=='M'){
             float a = floatbasicinput1(a = 0),b = floatbasicinput2(b = 0);

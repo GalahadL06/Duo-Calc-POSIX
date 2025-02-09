@@ -1,4 +1,7 @@
 #  Duo-Calc-POSIX
+## ***Disclaimer***
+-This project is now read-only, for I will now turn to next project ***EZCalc***
+
 ## ***Discription***
 - This is a simple duo-character calculator.
 - This project is a simple practise as I am learning C.
